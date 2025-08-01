@@ -22,8 +22,7 @@ A simple utility class for responsive Flutter UI — easily get screen width, he
 lib/responsiveutils.dart
 
 yaml
-Copy
-Edit
+
 
 ---
 
@@ -34,9 +33,6 @@ Edit
 ```dart
 import 'package:your_project/responsiveutils.dart';
 2️⃣ Initialize it in your widget tree (usually in main.dart)
-dart
-Copy
-Edit
 home: Builder(
   builder: (context) {
     ResponsiveUtils.init(context); // Required initialization
@@ -44,16 +40,10 @@ home: Builder(
   },
 ),
 3️⃣ Use it anywhere after initialization
-dart
-Copy
-Edit
 double width = ResponsiveUtils.getScreenWidthPercent(50);    // 50% of screen width
 double height = ResponsiveUtils.getScreenHeightPercent(30);  // 30% of screen height
 double fontSize = ResponsiveUtils.getScaledText(2);          // 2% of average screen size
 🧪 Example
-dart
-Copy
-Edit
 Container(
   width: ResponsiveUtils.getScreenWidthPercent(80),
   height: ResponsiveUtils.getScreenHeightPercent(20),
@@ -64,9 +54,6 @@ Container(
   ),
 )
 Output in log:
-mathematica
-Copy
-Edit
 Scaled Width (50%): 205.71
 Scaled Height (30%): 267.08
 Scaled Font Size (2%): 13.01
